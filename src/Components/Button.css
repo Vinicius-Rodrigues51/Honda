@@ -13,8 +13,16 @@
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: none;
   }
   
   .floating-button:hover {
     background-color: #DC002D;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .floating-button {
+      display: initial;
+    }
   }
