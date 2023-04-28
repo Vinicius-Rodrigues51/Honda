@@ -14,7 +14,7 @@ const FloatingButtonOptions = () => {
           Whats App <i class="fa-brands fa-whatsapp"></i>
         </li>
       </a>
-      <a href="tel:+08000071024" target="_blank">
+      <a href="tel:08000071024" target="_blank">
         <li>
           Entre em contato pelo 0800 <i class="fa-solid fa-phone"></i>
         </li>
