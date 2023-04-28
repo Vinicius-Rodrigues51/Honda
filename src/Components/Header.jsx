@@ -1,0 +1,54 @@
+import React from "react";
+import "./Header.css";
+import Logo from "../Assets/Honda_logo.png";
+import Arrow from "../Assets/Arrow2.png";
+
+//<FontAwesomeIcon icon="fa-light fa-arrow-right" />
+
+const Header = () => {
+  return (
+    <main className="container">
+      <h1>Atendimento Multicanal Redebrasil</h1>
+      <div className="img">
+        <img src={Logo} alt="" />
+      </div>
+
+      <h2>Selecione o modo de atendimento</h2>
+
+      <div className="wraper">
+        <div className="Button">
+          <a href="#" target="_blank">
+            Fale com um dos nossos atendentes
+          </a>
+        </div>
+
+        <div className="Button">
+          <a href="#" target="_blank">
+            Fale conosco através do WhatsApp
+          </a>
+        </div>
+
+        <a
+          href="https://clientes.consorcionacionalhonda.com.br/Seguranca/Login?_ga=2.64438120.693823917.1682553218-756674096.1679608111"
+          target="_blank"
+        >
+          <div className="directing">
+            <h3>Veja as datas das próximas assembléias Honda</h3>
+            <img src={Arrow} />
+          </div>
+        </a>
+      </div>
+
+      <div className="footer">
+        <h4>Redebrasil Gestão de ativos LTDA. | CNPJ: 03.681.777/0016-33</h4>
+        <h4>Rua Protásio Alves, 47 -Niterói | CEP: 92120-160</h4>
+        <h4>
+          Serviço de Atendimento ao Consumidor (SAC): sac@redebrasil.com.br
+        </h4>
+        <h4>Central de Atendimento ao Cliente (CAC): (11) 2137-2800 </h4>
+      </div>
+    </main>
+  );
+};
+
+export default Header;

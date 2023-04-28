@@ -1,0 +1,55 @@
+main {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.img {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.img img {
+    max-width: 100%;
+}
+
+.wraper {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+}
+
+.ButtonsDesk {
+    padding: 30px;
+}
+
+.Button {
+    width: 350px;
+    background: #DC002D;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.directing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.footer {
+    /* margin-top: 90px; */
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 90px;
+}
