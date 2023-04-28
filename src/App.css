@@ -32,3 +32,29 @@ h4 {
   opacity: .6;
   color: #8C8C8C;
 }
+
+@media screen and (max-width: 768px) {
+  
+  h1 {
+    color: #AAAAA9;
+    font-weight: regular;
+    font-size: 20px;
+  }
+  
+  h2 {
+    color: #AAAAA9;
+    font-weight: regular;
+    font-size: 17px;
+  }
+  
+  h3 {
+    color: #DD042B;
+    font-size: 16px;
+  }
+  
+  h4 {
+    opacity: .6;
+    color: #8C8C8C;
+    font-size: 14px;
+  }
+}

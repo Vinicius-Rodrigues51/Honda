@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../Assets/Honda_logo.png";
 import Arrow from "../Assets/Arrow2.png";
-
-//<FontAwesomeIcon icon="fa-light fa-arrow-right" />
+import Button from "./Button";
+import FloatingButtonOptions from "./Options";
 
 const Header = () => {
+  const [showOptions, setShowOptions] = useState(false);
+
+  const toggleOptions = () => {
+    setShowOptions(!showOptions);
+  };
+
   return (
     <main className="container">
       <h1>Atendimento Multicanal Redebrasil</h1>
@@ -37,6 +43,11 @@ const Header = () => {
             <img src={Arrow} />
           </div>
         </a>
+      </div>
+
+      <div className="mobile" onClick={toggleOptions}>
+        <Button />
+        {showOptions && <FloatingButtonOptions />}
       </div>
 
       <div className="footer">
