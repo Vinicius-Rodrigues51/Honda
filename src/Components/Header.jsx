@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../Assets/Honda_logo.png";
+// import Logo from "../Assets/Honda_logo_2.png";
 import Arrow from "../Assets/Arrow2.png";
 import Button from "./Button";
 import FloatingButtonOptions from "./Options";
@@ -11,6 +12,9 @@ const Header = () => {
   const toggleOptions = () => {
     setShowOptions(!showOptions);
   };
+
+  const date = new Date();
+  const year = date.getFullYear();
 
   return (
     <main className="container">
@@ -57,6 +61,7 @@ const Header = () => {
           Serviço de Atendimento ao Consumidor (SAC): sac@redebrasil.com.br
         </h4>
         <h4>Central de Atendimento ao Cliente (CAC): (11) 2137-2800 </h4>
+        <h4 className="dev">Dev by: Vinicius @{year}</h4>
       </div>
     </main>
   );

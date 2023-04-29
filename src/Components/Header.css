@@ -37,6 +37,11 @@ a {
     cursor: pointer;
 }
 
+.Button:hover {
+    opacity: .6;
+    transition: .3s all ease;
+}
+
 .directing {
     display: flex;
     justify-content: center;
