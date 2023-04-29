@@ -51,12 +51,13 @@ a {
 }
 
 .footer {
-    /* margin-top: 90px; */
     text-align: left;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 90px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.mobile {
+    display: none;
 }
 
 
@@ -74,9 +75,24 @@ a {
 
     .footer {
         text-align: center;
-        position: relative;
+        position: absolute;
         bottom: 0;
         left: 0;
-        margin-top: 90px;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .footer_M {
+        text-align: center;
     }
 }
