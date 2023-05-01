@@ -68,11 +68,13 @@ a {
     top: 0;
     left: 0;
     opacity: 0;
+    display: none;
     transition: .3s all ease-in-out;
 }
 
 .background_click.active {
     opacity: .4;
+    display: initial;
 }
 
 
@@ -109,5 +111,9 @@ a {
 
     .footer_M {
         text-align: center;
+    }
+
+    .background_click {
+        display: initial;
     }
 }

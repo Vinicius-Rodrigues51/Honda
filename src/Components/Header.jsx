@@ -1,37 +1,31 @@
 import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../Assets/Honda_logo.png";
-// import Logo from "../Assets/Honda_logo_2.png";
 import Arrow from "../Assets/Arrow2.png";
 import Button from "./Button";
 import FloatingButtonOptions from "./Options";
 
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
-  const background = document.querySelector("#background");
+  const [isBackgorundActive, setIsBackgorundActive] = useState(false);
   const date = new Date();
   const year = date.getFullYear();
 
-  if (showOptions == true) {
-    background.classList.add("active");
-  } else {
-    background.classList.remove("active");
-  }
-
   const toggleOptions = () => {
     setShowOptions(!showOptions);
+    setIsBackgorundActive(true);
   };
 
-  const removeActive = () => {
+  const handleOutsideClick = () => {
     setShowOptions(false);
+    setIsBackgorundActive(false);
   };
 
   return (
     <React.Fragment>
       <div
-        id="background"
-        className="background_click"
-        onClick={removeActive}
+        className={`background_click ${isBackgorundActive ? "active" : ""}`}
+        onClick={handleOutsideClick}
       ></div>
       <main className="container">
         <h1>Atendimento Multicanal Redebrasil</h1>
