@@ -13,7 +13,7 @@ const Header = () => {
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);
-    setIsBackgorundActive(true);
+    setIsBackgorundActive(!isBackgorundActive);
   };
 
   const handleOutsideClick = () => {
