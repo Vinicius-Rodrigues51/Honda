@@ -8,16 +8,31 @@ import FloatingButtonOptions from "./Options";
 
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
+  const background = document.querySelector("#background");
+  const date = new Date();
+  const year = date.getFullYear();
+
+  if (showOptions == true) {
+    background.classList.add("active");
+  } else {
+    background.classList.remove("active");
+  }
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);
   };
 
-  const date = new Date();
-  const year = date.getFullYear();
+  const removeActive = () => {
+    setShowOptions(false);
+  };
 
   return (
     <React.Fragment>
+      <div
+        id="background"
+        className="background_click"
+        onClick={removeActive}
+      ></div>
       <main className="container">
         <h1>Atendimento Multicanal Redebrasil</h1>
         <div className="img">
@@ -62,7 +77,7 @@ const Header = () => {
             Serviço de Atendimento ao Consumidor (SAC): sac@redebrasil.com.br
           </h4>
           <h4>Central de Atendimento ao Cliente (CAC): (11) 2137-2800 </h4>
-          <h4 className="dev">Dev by: Vinicius @{year}</h4>
+          <h4 className="dev">Dev by: Vinicius @ {year}</h4>
         </div>
       </main>
 

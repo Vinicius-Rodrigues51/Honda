@@ -60,6 +60,21 @@ a {
     display: none;
 }
 
+.background_click {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+.background_click.active {
+    opacity: .4;
+}
+
 
 @media screen and (max-width: 768px) {
     .img {
