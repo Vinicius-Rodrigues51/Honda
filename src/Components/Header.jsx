@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Header.css";
 import Logo from "../Assets/Honda_logo.png";
 import Arrow from "../Assets/Arrow2.png";
-import Button from "./Button";
+// import Button from "./Button";
 import FloatingButtonOptions from "./Options";
+import { UserContext } from "../UserContext";
 
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const [isBackgorundActive, setIsBackgorundActive] = useState(false);
+  // const [showOptions, setShowOptions] = useContext(userContext);
+  // const [isBackgorundActive, setIsBackgorundActive] = useContext(UserContext);
   const date = new Date();
   const year = date.getFullYear();
 
@@ -61,8 +64,8 @@ const Header = () => {
           </div>
 
           <div className="mobile" onClick={toggleOptions}>
-            <Button />
-            {showOptions && <FloatingButtonOptions />}
+            {/* <Button /> */}
+            {/* {showOptions && <FloatingButtonOptions />} */}
           </div>
 
           <div className="footer desktop">
@@ -92,6 +95,35 @@ const Header = () => {
           </div>
         </footer>
       </section>
+
+      <button
+        onClick={toggleOptions}
+        className={`floating-button  ${isBackgorundActive ? "active" : ""}`}
+      >
+        <div className="mobile_menu"></div>
+      </button>
+
+      <ul
+        className={`floating-button-options  ${
+          isBackgorundActive ? "active" : ""
+        }`}
+      >
+        <a href="https://clientes.consorcionacionalhonda.com.br/Seguranca/Login?_ga=2.266393545.693823917.1682553218-756674096.1679608111">
+          <li>
+            Próximas assembléias <i class="fa-solid fa-calendar-days"></i>
+          </li>
+        </a>
+        <a href="https://wa.me/5186140160" target="_blank">
+          <li>
+            Whats App <i class="fa-brands fa-whatsapp"></i>
+          </li>
+        </a>
+        <a href="tel:08000071024" target="_blank">
+          <li>
+            Entre em contato pelo 0800 <i class="fa-solid fa-phone"></i>
+          </li>
+        </a>
+      </ul>
     </React.Fragment>
   );
 };
