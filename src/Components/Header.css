@@ -1,7 +1,12 @@
+.styledBackgorund {
+    background: linear-gradient(360deg, #EDEDED 0%, #FFFFFF 100%);
+}
+
 main {
     margin: 0 auto;
     text-align: center;
     padding: 30px;
+    /* background: linear-gradient(360deg, #EDEDED 0%, #FFFFFF 100%); */
 }
 
 .img {
