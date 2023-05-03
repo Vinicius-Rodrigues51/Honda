@@ -1,4 +1,4 @@
-/* .floating-button-options {
+.floating-button-options {
     position: absolute;
     bottom: 80px;
     right: 20px;
@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+
   }
   
   .floating-button-options li {
@@ -30,4 +32,4 @@
 
   i {
     font-size: 20px;
-  } */
+  }

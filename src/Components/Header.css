@@ -10,7 +10,7 @@ main {
 }
 
 .img {
-    margin: 0 auto;
+    margin: 30px auto;
     width: 400px;
 }
 
@@ -184,49 +184,5 @@ a {
 }
 
 .floating-button.active .mobile_menu{
-    transform: rotate(595deg);
+    transform: rotate(235deg);
 }
-
-
-.floating-button-options {
-    position: absolute;
-    bottom: 80px;
-    right: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: flex-end;
-    opacity: 0;
-    transition: .3s all ease-in-out;
-    display: none;
-  }
-  
-  .floating-button-options li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #DD042B;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin: 10px 0;
-  }
-  
-  .floating-button-options li:hover {
-    background-color: #DC002D;
-    color: #fff;
-  }
-
-  i {
-    font-size: 20px;
-  }
-
-  .floating-button-options.active {
-    display: flex;
-    opacity: 1;
-    transition: .3s all ease-in-out;
-  }
