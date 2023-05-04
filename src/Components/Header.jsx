@@ -44,13 +44,13 @@ const Header = () => {
 
           <div className="wraper">
             <div className="Button">
-              <a href="#" target="_blank">
+              <a href="tel:08000071024" target="_blank">
                 Fale com um dos nossos atendentes
               </a>
             </div>
 
             <div className="Button">
-              <a href="#" target="_blank">
+              <a href="https://wa.me/5186140160" target="_blank">
                 Fale conosco através do WhatsApp
               </a>
             </div>
