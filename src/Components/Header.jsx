@@ -1,19 +1,21 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./Header.css";
-// import Logo from "../Assets/Honda_logo.png";
 import Logo from "../Assets/Honda_logo_2.png";
 import Arrow from "../Assets/Arrow2.png";
 // import Button from "./Button";
 import FloatingButtonOptions from "./Options";
-// import { UserContext } from "../UserContext";
+import { userContext } from "../UserContext";
+import ReactGA from "react-ga";
 
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const [isBackgorundActive, setIsBackgorundActive] = useState(false);
-  // const [showOptions, setShowOptions] = useContext(userContext);
-  // const [isBackgorundActive, setIsBackgorundActive] = useContext(UserContext);
   const date = new Date();
   const year = date.getFullYear();
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);

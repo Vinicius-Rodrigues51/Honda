@@ -1,13 +1,13 @@
 import React, { createContext, useState } from "react";
 
-export const UserContext = createContext();
+export const userContext = createContext();
 
 export const StateValue = ({ children }) => {
   const [showOptions, setShowOptions] = useState(false);
   const [isBackgorundActive, setIsBackgorundActive] = useState(false);
 
   return (
-    <UserContext.Provider
+    <userContext.Provider
       value={{
         showOptions,
         setShowOptions,
@@ -16,6 +16,6 @@ export const StateValue = ({ children }) => {
       }}
     >
       {children}
-    </UserContext.Provider>
+    </userContext.Provider>
   );
 };
