@@ -13,22 +13,6 @@ const Header = () => {
   const date = new Date();
   const year = date.getFullYear();
 
-  const MeuComponente = () => {
-    useEffect(() => {
-      MeuComponente();
-
-      ReactGA.set({
-        campaignSource: "google",
-        campaignMedium: "cpc",
-        campaignName: "campanha-1",
-        campaignKeyword: "palavra-chave-1",
-        campaignContent: "anúncio-1",
-      });
-
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
-  };
-
   const handleWppClick = () => {
     ReactGA.event({
       category: "Botões",
