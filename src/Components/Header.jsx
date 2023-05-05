@@ -17,6 +17,14 @@ const Header = () => {
     ReactGA.pageview(window.location.pathname);
   }, []);
 
+  const handleWppClick = () => {
+    ReactGA.event({
+      category: "Botões",
+      action: "Acessar",
+      label: "WhatsApp",
+    });
+  };
+
   const toggleOptions = () => {
     setShowOptions(!showOptions);
     setIsBackgorundActive(!isBackgorundActive);
@@ -50,7 +58,11 @@ const Header = () => {
             </div>
 
             <div className="Button">
-              <a href="https://wa.me/5186140160" target="_blank">
+              <a
+                onClick={handleWppClick}
+                href="https://wa.me/5186140160"
+                target="_blank"
+              >
                 Fale conosco através do WhatsApp
               </a>
             </div>

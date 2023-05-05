@@ -1,5 +1,14 @@
 import React from "react";
 import "./Options.css";
+import ReactGA from "react-ga";
+
+const handleWppClick = () => {
+  ReactGA.event({
+    category: "Botões",
+    action: "Acessar",
+    label: "WhatsApp",
+  });
+};
 
 const FloatingButtonOptions = () => {
   return (
@@ -9,7 +18,11 @@ const FloatingButtonOptions = () => {
           Próximas assembléias <i class="fa-solid fa-calendar-days"></i>
         </li>
       </a>
-      <a href="https://wa.me/5186140160" target="_blank">
+      <a
+        onClick={handleWppClick}
+        href="https://wa.me/5186140160"
+        target="_blank"
+      >
         <li>
           Whats App <i class="fa-brands fa-whatsapp"></i>
         </li>
