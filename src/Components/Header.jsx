@@ -13,15 +13,43 @@ const Header = () => {
   const date = new Date();
   const year = date.getFullYear();
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  const MeuComponente = () => {
+    useEffect(() => {
+      MeuComponente();
+
+      ReactGA.set({
+        campaignSource: "google",
+        campaignMedium: "cpc",
+        campaignName: "campanha-1",
+        campaignKeyword: "palavra-chave-1",
+        campaignContent: "anúncio-1",
+      });
+
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
+  };
 
   const handleWppClick = () => {
     ReactGA.event({
       category: "Botões",
-      action: "Acessar",
+      action: "WhatsApp",
       label: "WhatsApp",
+    });
+  };
+
+  const handleTelClick = () => {
+    ReactGA.event({
+      category: "Botões",
+      action: "0800",
+      label: "Tel",
+    });
+  };
+
+  const handleHondaClick = () => {
+    ReactGA.event({
+      category: "Botões",
+      action: "Assembléia",
+      label: "Honda",
     });
   };
 
@@ -52,7 +80,11 @@ const Header = () => {
 
           <div className="wraper">
             <div className="Button">
-              <a href="tel:08000071024" target="_blank">
+              <a
+                onClick={handleTelClick}
+                href="tel:08000071024"
+                target="_blank"
+              >
                 Fale com um dos nossos atendentes
               </a>
             </div>
@@ -68,6 +100,7 @@ const Header = () => {
             </div>
 
             <a
+              onClick={handleHondaClick}
               href="https://clientes.consorcionacionalhonda.com.br/Seguranca/Login?_ga=2.64438120.693823917.1682553218-756674096.1679608111"
               target="_blank"
             >
