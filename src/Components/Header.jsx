@@ -66,7 +66,7 @@ const Header = () => {
             <div className="Button">
               <a
                 onClick={handleTelClick}
-                href="tel:08000071024"
+                href="tel:08000071304"
                 target="_blank"
               >
                 Fale com um dos nossos atendentes
@@ -76,7 +76,7 @@ const Header = () => {
             <div className="Button">
               <a
                 onClick={handleWppClick}
-                href="https://wa.me/5186140160"
+                href="https://wa.me/5511994965554"
                 target="_blank"
               >
                 Fale conosco através do WhatsApp

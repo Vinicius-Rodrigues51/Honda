@@ -39,14 +39,14 @@ const FloatingButtonOptions = () => {
       </a>
       <a
         onClick={handleWppClick}
-        href="https://wa.me/5186140160"
+        href="https://wa.me/5511994965554"
         target="_blank"
       >
         <li>
           Whats App <i class="fa-brands fa-whatsapp"></i>
         </li>
       </a>
-      <a onClick={handleTelClick} href="tel:08000071024" target="_blank">
+      <a onClick={handleTelClick} href="tel:08000071304" target="_blank">
         <li>
           Entre em contato pelo 0800 <i class="fa-solid fa-phone"></i>
         </li>
