@@ -99,8 +99,9 @@ const Header = () => {
             {/* <Button /> */}
             {showOptions && <FloatingButtonOptions />}
           </div>
-
-          <div className="footer desktop">
+        </main>
+        <footer className="deskfooter">
+          <div className="">
             <h4>
               Redebrasil Gestão de ativos LTDA. | CNPJ: 03.681.777/0016-33
             </h4>
@@ -111,7 +112,7 @@ const Header = () => {
             <h4>Central de Atendimento ao Cliente (CAC): (11) 2137-2800 </h4>
             <h4 className="dev">Dev by: Vinicius @ {year}</h4>
           </div>
-        </main>
+        </footer>
 
         <footer>
           <div className="footer_M mobile">

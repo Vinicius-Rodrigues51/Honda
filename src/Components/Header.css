@@ -6,6 +6,7 @@ main {
     margin: 0 auto;
     text-align: center;
     padding: 30px;
+    height: 100vh;
     /* background: linear-gradient(360deg, #EDEDED 0%, #FFFFFF 100%); */
 }
 
@@ -80,6 +81,12 @@ a {
 .background_click.active {
     opacity: .4;
     display: initial;
+}
+
+.deskfooter {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 30px;
 }
 
 
