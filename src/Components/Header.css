@@ -117,6 +117,10 @@ a {
         display: none;
     }
 
+    .deskfooter {
+        display: none;
+    }
+
     footer {
         padding: 30px;
     }
