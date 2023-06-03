@@ -4,7 +4,7 @@ import Logo from "../Assets/Honda_logo_2.png";
 import Arrow from "../Assets/Arrow2.png";
 import FloatingButtonOptions from "./Options";
 import ReactGA from "react-ga";
-import { clickEvent } from "./Functions";
+import { clickTel, clickWpp, assembleiaClick } from "./Functions";
 
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
             <div
               className="Button"
               onClick={() => {
-                clickEvent();
+                clickTel();
               }}
             >
               <a href="tel:08000071304" target="_blank">
@@ -51,7 +51,7 @@ const Header = () => {
               </a>
             </div>
 
-            <div className="Button">
+            <div onClick={() => clickWpp()} className="Button">
               <a href="https://wa.me/5511994965554" target="_blank">
                 Fale conosco através do WhatsApp
               </a>
@@ -61,7 +61,7 @@ const Header = () => {
               href="https://clientes.consorcionacionalhonda.com.br/Seguranca/Login?_ga=2.64438120.693823917.1682553218-756674096.1679608111"
               target="_blank"
             >
-              <div className="directing">
+              <div onClick={() => assembleiaClick()} className="directing">
                 <h3>Veja as datas das próximas assembléias Honda</h3>
                 <img src={Arrow} />
               </div>
