@@ -1,33 +1,44 @@
 import ReactGA from "react-ga";
 
-const clickTel = () => {
+// const clickTel = () => {
+//   ReactGA.event({
+//     category: "Botão",
+//     action: "Clique",
+//     label: "0800 Click",
+//   });
+
+//   console.log("0800 event");
+// };
+
+// const clickWpp = () => {
+//   ReactGA.event({
+//     category: "Botão",
+//     action: "Clique",
+//     label: "Wpp Click",
+//   });
+
+//   console.log("Wpp event");
+// };
+
+// const assembleiaClick = () => {
+//   ReactGA.event({
+//     category: "Botão",
+//     action: "Clique",
+//     label: "Assembleia Click",
+//   });
+
+//   console.log("Assembleia event");
+// };
+
+const handleClick = (buttonLabel) => {
   ReactGA.event({
-    category: "0800",
-    action: "Click",
-    label: "0800 Click",
+    category: "Botão",
+    action: "Clique",
+    label: buttonLabel,
   });
 
-  console.log("0800 event");
+  console.log("working");
 };
 
-const clickWpp = () => {
-  ReactGA.event({
-    category: "Wpp",
-    action: "Click",
-    label: "Wpp Click",
-  });
-
-  console.log("Wpp event");
-};
-
-const assembleiaClick = () => {
-  ReactGA.event({
-    category: "Assembleia",
-    action: "Click",
-    label: "Assembleia Click",
-  });
-
-  console.log("Assembleia event");
-};
-
-export { clickTel, clickWpp, assembleiaClick };
+// export { clickTel, clickWpp, assembleiaClick };
+export { handleClick };
